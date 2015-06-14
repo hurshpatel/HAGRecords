@@ -26,105 +26,20 @@
       </header>
       <section>
         <h3>
-<a id="About Me" class="anchor" href="#About Me" aria-hidden="true"><span class="octicon octicon-link"></span></a>About Me</h3>
+<a id="Intro" class="anchor" href="#Intro" aria-hidden="true"><span class="octicon octicon-link"></span></a>Introduction</h3>
 
-<p> My name is Hursh Patel, and I'm a junior (class of 2016) at Rutgers University - New Brunswick who is pursuing a Bachelor's degree in Computer Science and a minor in Mathematics. This website hosts many of the projects which I have worked on recently (and they are also some of my favorites). I am open to hear about any freelance work you may have for me, so do not be afraid to shoot me an email! I would love to hear about your business.</p>
+<p>Before I dive into the explanation, I wanted to say I did not do this myself. I had two great partners, Adam and Gavriel, with whom I worked on this project. There was no way this could have been done by one person, and I just wanted to clarify that this was a team effort</p>
+<p>So you might be asking, "what even does this do?? What is it?" and it's really quite simple. This is a website of a made up record label, called HAG Records (HAG stands for Hursh Adam Gavriel).</p>
+<p>Our database contains information about 3 primary entities, artists, producers, and executives. For an artist, we store information about their discography, which includes songs and albums, the musical act(s) they belong to, and the years left on their contract with HAG Records. For a producer, who is responsible for producing records for artists, we store how many years left on their contract with HAG Records. For an executive, as well as for artists and producers, we store their personal information such as phone, SSN, and salary (obviously made up, we don't have that information). Executives are responsible for signing hot artists, dropping artists putting out whack joints, and making sure the atmosphere of HAG Records is one that supports the label’s reputation as the #1 hit factory in the world.
+Our website, (formerly!) located at cs336-5.cs.rutgers.edu, allows a user to view the contents of the database from the perspective of a general user, an artist, a producer or an executive, each of which having different read privileges which is discussed in more detail below. We should note that a general user is not an entity in our database.</p>
 
-<!--
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre> 
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
--->
-
-<h3>
-<a id="Academic-Interests" class="anchor" href="#Academic-Interests" aria-hidden="true"><span class="octicon octicon-link"></span></a>Academic Interests</h3>
-
-<ul style="list-style-type:disc">
-  <li><b>iOS App Development: </b>I have always been interested in how apps were made because they have such a huge positive impact on our daily lives. Imagine a world without your favorite apps; thats a world I do not want to live in. This is what makes me happy to say that I can develop apps.</li>
-  <li><b>Databases and Data Management: </b>Data is another hugely important thing in our societies, and the proper use of data (storing and manipulating) is extremely crucial to make things like apps or websites better to use for the user.</li>
-  <li><b>Mathematics:</b> I have always been good at math and only began to realize that I really enjoyed it when I started doing Calculus. I loved Calculus so much so that I've taken courses up to Calc 5 (which was probaly my favorite).</li>
-</ul>
-<p> I have projects in iOS Development and Databases, which can be found down this site. If you think you might need my services in these fields, don't be afraid to contact me about it. </p>
-
-<h3>
-<a id="Technical-Abilities" class="anchor" href="#Technical-Abilites" aria-hidden="true"><span class="octicon octicon-link"></span></a>Technical Abilities</h3>
-
-<p>Scale for Proficiency (1-5): Expert, Very Proficient, Proficient, Familiar, Beginner</p>
-
-<table cellspacing='0'> <!-- cellspacing='0' is important, must stay -->
-
-	<!-- Table Header -->
-	<thead width = "50%">
-		<tr>
-			<th>Language</th>
-			<th>Proficiency</th>
-		
-		</tr>
-	</thead>
-	<!-- Table Header -->
-
-	<!-- Table Body -->
-	<tbody>
-
-		<tr>
-			<td>C</td>
-			<td>Very Proficient</td>
-		</tr><!-- Table Row -->
-
-		<tr class="even">
-			<td>Swift</td>
-			<td>Proficient</td>
-		</tr><!-- Darker Table Row -->
-
-		<tr>
-			<td>SQL</td>
-			<td>Very Proficient</td>
-		</tr>
-
-		<tr class="even"> 
-			<td>Java</td>
-			<td>Very Proficient</td>
-		</tr>
-
-		<tr>
-			<td>HTML</td>
-			<td>Proficient</td>
-		</tr>
-
-		<tr class = "even">
-			<td>PHP</td>
-			<td>Familiar</td>
-		</tr>
-
-		<tr>
-			<td>Maple</td>
-			<td>Proficient</td>
-		</tr>
-
-
-	</tbody>
-	<!-- Table Body -->
-
-</table>
-
-
-<h3>
-<a id="Projects" class="anchor" href="#Projects" aria-hidden="true"><span class="octicon octicon-link"></span></a>Projects</h3>
-
-<a href="http://hurshpatel.github.io/Calculator/">Calculator App<br></a>
-<a href="http://hurshpatel.github.io/Happiness/">Happiness App<br></a>
-<a href="http://hurshpatel.github.io/HAGRecords/">HAG Records Database Website<br><br></a>
-
-<h3>
-<a id="Contact" class="anchor" href="#Contact" aria-hidden="true"><span class="octicon octicon-link"></span></a>Contact Me</h3>
-
-<p>Email:<br>hursh.patel2125@gmail.com</p>
-<p>LinkedIn:<br><a href="https://www.linkedin.com/in/hurshpatel">https://www.linkedin.com/in/hurshpatel</a></p>
+   <h3>
+<a id="Privileges" class="anchor" href="#Privileges" aria-hidden="true"><span class="octicon octicon-link"></span></a>Types of Users and Their Privileges</h3>
+<p><b>NOTE:</b> In order to view all of the data accessible by one user, leave all the text fields blank.</p>
+<p><u>General User</u></p>
+<p>General Users are unable to query (1) <b>first name</b>, (2) <b>last name</b>, (3) <b>genre</b></p>
+<p>General Users are able to query (1) <b>artist</b>, (2) <b>album</b>, (3) <b>song name</b></p>
+<p>The general user represents the general public, those who are not employees of the record label. They are the type of user that is most limited in the types of queries that they are allowed to perform on the database. A general user may be a fan of an artist on the HAG Records roster who wants to discover more songs by them. They are permitted to search by artist, album and song name.<br>Examples of queries that they are not allowed to perform include first name, last name, and genre. HAG Records has determined that first and last name is privileged information, which should not be visible to the general public. Genre is a restricted query to satisfy artists’ requests not to be associated with a genre by their fans, which they believe stifles their creative potential.</p>
 
       </section>
     </div>

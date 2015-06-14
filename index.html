@@ -41,6 +41,28 @@ Our website, (formerly!) located at cs336-5.cs.rutgers.edu, allows a user to vie
 <p>General Users are able to query (1) <b>artist</b>, (2) <b>album</b>, (3) <b>song name</b></p>
 <p>The general user represents the general public, those who are not employees of the record label. They are the type of user that is most limited in the types of queries that they are allowed to perform on the database. A general user may be a fan of an artist on the HAG Records roster who wants to discover more songs by them. They are permitted to search by artist, album and song name.<br>Examples of queries that they are not allowed to perform include first name, last name, and genre. HAG Records has determined that first and last name is privileged information, which should not be visible to the general public. Genre is a restricted query to satisfy artists’ requests not to be associated with a genre by their fans, which they believe stifles their creative potential.</p>
 
+<p><u>Artist</u></p>
+<p>Artists are unable to query (1) <b>release year</b>, (2) <b>contract years</b>, (3) <b>first name</b></p>
+<p>Artists are able to query (1) <b>artist</b>, (2) <b>song</b>, <b>album</b></p>
+<p>The artist user at HAG Records can search for more information than the general user, but not as much as the executive. On the website, the artist cannot search by release year, contract years, or first name as that information is not available to them. Other than that, they have access to search for any other field. They cannot search by release year or contract years as that info does not pertain to them, and they do not need to be searching for it. They also do not need to search by the first name of an employee, as searching by their last name would suffice.<br>The queries supported for the artist user are searching by Artist Name, Album Name, and Song Name. These are the same queries as the producer, as these two users have very similar positions in the Record Label. By searching by Artist Name, it will show the name of the artist, and also the act they are associated with. By searching by Album Name, it will display the album name and the act that made the album. By searching by Song Name, it will display the song name, the act that made the song, and the album from which the song is. If the artist leaves all the fields blank, it will show all the data that is available to them. That would be the song name, artist name, act name, album name, and last name.
+</p>
+
+<p><u>Producer</u></p>
+<p>Producers are unable to query (1) <b>release year</b>, (2) <b>genre</b>, (3) <b>first name</b></p>
+<p>Producers are able to query (1) <b>artist</b>, (2) <b>album</b>, <b>song</b></p>
+<p>The producer user at HAG Records is able to access all information except for the year a song was released, the genre of an act, or the first names of the employees. Both the year of a song and the first name of an employee are information they don’t need to know, and preventing them from accessing the genre is a good way to keep their ideas fresh when working with an act. Keeping them from accessing the first name of an employee keeps their information about how to contact other employees on a need-to- know basis.<br>The queries that are supported for producer are artist, album, and song, which are all useful for drawing inspiration from an artist’s past work when they enter the studio with them. A producer needs access to this information also when choosing an artist to work with.</p>
+
+<p><u>Executive</u></p>
+<p>Executives can query everything any other user can access, plus what every other user cannot access.</p>
+<p>The executive user is the highest ranked user on HAG Records, as they have access to all the information in the database. On the website, the queries supported for this user are release year, contract years, and genre. When searching by release year, the information displayed is the Act Name, Album Name, and Release Year. When searching by contract years, it will display the Artist name and their contract years. When searching for the genre, it will display the Act Name and the Genre. If all fields are left blank, then the query will display all the data available to the executive. That includes 4 different views. There is one for info about artists, one for info about producers, one for info about songs, and one for info about the employees. In the Artists query, it shows the artist name, the act name, the genre, and the contract years. In the Producer query, it displays the producer name and their contract years. For the Songs, it shows the act name, the song name, the album name, and the release year. For information about the employees, it shows their last name, first name, phone number, and their SSN.</p>
+
+  <h3>
+<a id="Website" class="anchor" href="#Website" aria-hidden="true"><span class="octicon octicon-link"></span></a>The Website and it's Data</h3>
+
+<p>Below is a link to the website. Only the front end is working right now, but as soon as the database is migrated to a new host it will be fully functional again<br></p>
+<a href="http://hurshpatel.github.io/HAGRecords/website/">HAG Records<br></a>
+<p>If you want to know exactly what data is stored in the database so that you are not randomly querying things that are non-existent in the database, there will be all the data for each table posted below.</p>
+<p><i>Data currently not formatted. Will be available soon</i></p>
       </section>
     </div>
     <footer>
